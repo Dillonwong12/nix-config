@@ -97,6 +97,9 @@
         fi
       fi
 
+    # Add uv location to PATH
+    export PATH="$HOME/.local/bin:$PATH"
+
     # Open VS Code at the current working dir and activate the virtual environment
     code .
     if [ -d "hso-ml-palantir" ]; then
